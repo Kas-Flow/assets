@@ -20,7 +20,7 @@
     <rect width="40" height="40" rx="8" fill="#bef264" stroke="#000" stroke-width="3"/>
     <text x="20" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#000">K</text>
   </g>
-  <text x="850" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#000">KasFlow</text>
+  <text x="850" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#000">KasFlow</text>
 
   <!-- Title -->
   <text x="450" y="45" text-anchor="middle" class="title" fill="#000">Technical Innovation</text>
