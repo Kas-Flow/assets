@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500">
+  <defs>
+    <style>
+      .title { font-family: system-ui, sans-serif; font-weight: 800; font-size: 24px; }
+      .subtitle { font-family: system-ui, sans-serif; font-weight: 600; font-size: 14px; fill: #475569; }
+      .box-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 14px; }
+      .box-text { font-family: system-ui, sans-serif; font-weight: 400; font-size: 11px; fill: #475569; }
+      .code { font-family: monospace; font-size: 10px; fill: #000; }
+      .hook-name { font-family: monospace; font-weight: 700; font-size: 12px; fill: #000; }
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#000"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="500" fill="#fff5f0"/>
+
+  <!-- KasFlow Logo - Top Right -->
+  <g transform="translate(830, 10)">
+    <rect width="40" height="40" rx="8" fill="#bef264" stroke="#000" stroke-width="3"/>
+    <text x="20" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#000">K</text>
+  </g>
+  <text x="850" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#000">KasFlow</text>
+
+  <!-- Title -->
+  <text x="450" y="35" text-anchor="middle" class="title" fill="#000">@kasflow/wallet-connector</text>
+  <text x="450" y="55" text-anchor="middle" class="subtitle">React Integration Architecture</text>
+
+  <!-- Left: Provider -->
+  <g transform="translate(30, 85)">
+    <rect width="200" height="380" rx="12" fill="#22d3ee" stroke="#000" stroke-width="4"/>
+
+    <text x="100" y="30" text-anchor="middle" class="box-title" fill="#000">KaspaWalletProvider</text>
+    <line x1="15" y1="45" x2="185" y2="45" stroke="#000" stroke-width="2"/>
+
+    <!-- Config -->
+    <rect x="15" y="60" width="170" height="80" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="100" y="80" text-anchor="middle" class="code">config={{</text>
+    <text x="100" y="95" text-anchor="middle" class="code">  appName: 'My App',</text>
+    <text x="100" y="110" text-anchor="middle" class="code">  network: 'mainnet',</text>
+    <text x="100" y="125" text-anchor="middle" class="code">  adapters: [...]</text>
+    <text x="100" y="140" text-anchor="middle" class="code">}}</text>
+
+    <!-- Adapters -->
+    <text x="100" y="170" text-anchor="middle" class="box-title" fill="#000">Adapters</text>
+
+    <rect x="15" y="185" width="170" height="35" rx="6" fill="#bef264" stroke="#000" stroke-width="2"/>
+    <text x="100" y="207" text-anchor="middle" class="box-title" fill="#000">passkeyAdapter()</text>
+
+    <rect x="15" y="230" width="170" height="35" rx="6" fill="#a78bfa" stroke="#000" stroke-width="2"/>
+    <text x="100" y="252" text-anchor="middle" class="box-title" fill="#000">kaswareAdapter()</text>
+
+    <!-- State -->
+    <text x="100" y="290" text-anchor="middle" class="box-title" fill="#000">Shared State</text>
+    <rect x="15" y="300" width="170" height="65" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="25" y="320" class="box-text">connected: boolean</text>
+    <text x="25" y="335" class="box-text">address: string | null</text>
+    <text x="25" y="350" class="box-text">balance: WalletBalance</text>
+  </g>
+
+  <!-- Arrow from provider to hooks -->
+  <path d="M 230 270 L 280 270" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Center: React Hooks -->
+  <g transform="translate(290, 85)">
+    <rect width="220" height="380" rx="12" fill="#f472b6" stroke="#000" stroke-width="4"/>
+
+    <text x="110" y="30" text-anchor="middle" class="box-title" fill="#000">React Hooks</text>
+    <line x1="15" y1="45" x2="205" y2="45" stroke="#000" stroke-width="2"/>
+
+    <!-- Hook 1 -->
+    <rect x="15" y="60" width="190" height="55" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="110" y="80" text-anchor="middle" class="hook-name">useWallet()</text>
+    <text x="110" y="100" text-anchor="middle" class="box-text">Main hook - state + actions</text>
+
+    <!-- Hook 2 -->
+    <rect x="15" y="125" width="190" height="55" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="110" y="145" text-anchor="middle" class="hook-name">useBalance()</text>
+    <text x="110" y="165" text-anchor="middle" class="box-text">Balance with formatting</text>
+
+    <!-- Hook 3 -->
+    <rect x="15" y="190" width="190" height="55" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="110" y="210" text-anchor="middle" class="hook-name">useAccount()</text>
+    <text x="110" y="230" text-anchor="middle" class="box-text">Address + copy utilities</text>
+
+    <!-- Hook 4 -->
+    <rect x="15" y="255" width="190" height="55" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="110" y="275" text-anchor="middle" class="hook-name">useNetwork()</text>
+    <text x="110" y="295" text-anchor="middle" class="box-text">Network switching</text>
+
+    <!-- Hook 5 -->
+    <rect x="15" y="320" width="190" height="55" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="110" y="340" text-anchor="middle" class="hook-name">useConnect()</text>
+    <text x="110" y="360" text-anchor="middle" class="box-text">Connection + modal control</text>
+  </g>
+
+  <!-- Arrow from hooks to components -->
+  <path d="M 510 270 L 560 270" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Right: Components -->
+  <g transform="translate(570, 85)">
+    <rect width="200" height="250" rx="12" fill="#fde68a" stroke="#000" stroke-width="4"/>
+
+    <text x="100" y="30" text-anchor="middle" class="box-title" fill="#000">Components</text>
+    <line x1="15" y1="45" x2="185" y2="45" stroke="#000" stroke-width="2"/>
+
+    <!-- Component 1 -->
+    <rect x="15" y="60" width="170" height="70" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="100" y="85" text-anchor="middle" class="hook-name">&lt;ConnectButton /&gt;</text>
+    <text x="100" y="105" text-anchor="middle" class="box-text">Smart button</text>
+    <text x="100" y="120" text-anchor="middle" class="box-text">Shows balance + network</text>
+
+    <!-- Component 2 -->
+    <rect x="15" y="145" width="170" height="70" rx="6" fill="#fff" stroke="#000" stroke-width="2"/>
+    <text x="100" y="170" text-anchor="middle" class="hook-name">&lt;WalletModal /&gt;</text>
+    <text x="100" y="190" text-anchor="middle" class="box-text">Wallet selection UI</text>
+    <text x="100" y="205" text-anchor="middle" class="box-text">Auto-managed state</text>
+  </g>
+
+  <!-- Right: Your App -->
+  <g transform="translate(570, 355)">
+    <rect width="200" height="110" rx="12" fill="#bef264" stroke="#000" stroke-width="4"/>
+
+    <text x="100" y="30" text-anchor="middle" class="box-title" fill="#000">Your React App</text>
+    <line x1="15" y1="45" x2="185" y2="45" stroke="#000" stroke-width="2"/>
+
+    <text x="100" y="70" text-anchor="middle" class="box-text">Import hooks</text>
+    <text x="100" y="90" text-anchor="middle" class="box-text">Add components</text>
+    <text x="100" y="110" text-anchor="middle" font-family="monospace" font-size="10" font-weight="700" fill="#000">5 min integration</text>
+  </g>
+
+  <!-- Arrow from components to app -->
+  <path d="M 670 335 L 670 355" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bottom note -->
+  <text x="450" y="485" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#475569" font-weight="600">Full TypeScript support - All hooks and components are fully typed</text>
+</svg>

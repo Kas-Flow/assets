@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 400">
+  <defs>
+    <style>
+      .title { font-family: system-ui, sans-serif; font-weight: 800; font-size: 28px; }
+      .problem-title { font-family: system-ui, sans-serif; font-weight: 700; font-size: 16px; }
+      .problem-text { font-family: system-ui, sans-serif; font-weight: 400; font-size: 12px; fill: #475569; }
+      .icon-text { font-family: system-ui, sans-serif; font-size: 32px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="900" height="400" fill="#fff5f0"/>
+
+  <!-- KasFlow Logo - Top Right -->
+  <g transform="translate(800, 15)">
+    <rect width="40" height="40" rx="8" fill="#bef264" stroke="#000" stroke-width="3"/>
+    <text x="20" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="900" font-size="22" fill="#000">K</text>
+  </g>
+  <text x="820" y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-weight="700" font-size="14" fill="#000">KasFlow</text>
+
+  <!-- Title -->
+  <text x="450" y="50" text-anchor="middle" class="title" fill="#000">The Problem with Crypto Payments</text>
+
+  <!-- Problem 1: Seed Phrases -->
+  <g transform="translate(50, 90)">
+    <rect width="250" height="260" rx="12" fill="#fff" stroke="#000" stroke-width="4"/>
+    <rect x="4" y="4" width="250" height="260" rx="12" fill="none" stroke="#000" stroke-width="0" transform="translate(6,6)" opacity="0.2"/>
+
+    <!-- Red X icon -->
+    <circle cx="125" cy="60" r="30" fill="#ef4444" stroke="#000" stroke-width="3"/>
+    <text x="125" y="70" text-anchor="middle" fill="#fff" font-size="28" font-weight="bold">X</text>
+
+    <text x="125" y="115" text-anchor="middle" class="problem-title" fill="#000">Terrible Wallet UX</text>
+
+    <text x="125" y="145" text-anchor="middle" class="problem-text">Write down 12-24 words</text>
+    <text x="125" y="165" text-anchor="middle" class="problem-text">Store them "securely"</text>
+    <text x="125" y="185" text-anchor="middle" class="problem-text">Lose them = lose everything</text>
+
+    <!-- Sad seed phrase illustration -->
+    <rect x="45" y="205" width="160" height="40" rx="6" fill="#fde68a" stroke="#000" stroke-width="2"/>
+    <text x="125" y="230" text-anchor="middle" font-family="monospace" font-size="10" fill="#000">apple banana crypto...</text>
+  </g>
+
+  <!-- Problem 2: No Libraries -->
+  <g transform="translate(325, 90)">
+    <rect width="250" height="260" rx="12" fill="#fff" stroke="#000" stroke-width="4"/>
+
+    <!-- Code icon -->
+    <circle cx="125" cy="60" r="30" fill="#ef4444" stroke="#000" stroke-width="3"/>
+    <text x="125" y="70" text-anchor="middle" fill="#fff" font-size="20" font-weight="bold">&lt;/&gt;</text>
+
+    <text x="125" y="115" text-anchor="middle" class="problem-title" fill="#000">No Kaspa Libraries</text>
+
+    <text x="125" y="145" text-anchor="middle" class="problem-text">No "Connect Wallet" button</text>
+    <text x="125" y="165" text-anchor="middle" class="problem-text">No React hooks</text>
+    <text x="125" y="185" text-anchor="middle" class="problem-text">Build everything from scratch</text>
+
+    <!-- Code block illustration -->
+    <rect x="45" y="205" width="160" height="40" rx="6" fill="#27272a" stroke="#000" stroke-width="2"/>
+    <text x="55" y="225" font-family="monospace" font-size="9" fill="#ef4444">// TODO: figure it out</text>
+    <text x="55" y="238" font-family="monospace" font-size="9" fill="#6b7280">// good luck lol</text>
+  </g>
+
+  <!-- Problem 3: Complex Backend -->
+  <g transform="translate(600, 90)">
+    <rect width="250" height="260" rx="12" fill="#fff" stroke="#000" stroke-width="4"/>
+
+    <!-- Server icon -->
+    <circle cx="125" cy="60" r="30" fill="#ef4444" stroke="#000" stroke-width="3"/>
+    <text x="125" y="68" text-anchor="middle" fill="#fff" font-size="24">DB</text>
+
+    <text x="125" y="115" text-anchor="middle" class="problem-title" fill="#000">Complex Infrastructure</text>
+
+    <text x="125" y="145" text-anchor="middle" class="problem-text">Need a backend server</text>
+    <text x="125" y="165" text-anchor="middle" class="problem-text">Database for payments</text>
+    <text x="125" y="185" text-anchor="middle" class="problem-text">Webhooks, APIs, hosting...</text>
+
+    <!-- Server stack illustration -->
+    <rect x="75" y="200" width="100" height="20" rx="4" fill="#a78bfa" stroke="#000" stroke-width="2"/>
+    <text x="125" y="214" text-anchor="middle" font-size="9" fill="#000">Server</text>
+    <rect x="75" y="222" width="100" height="20" rx="4" fill="#f472b6" stroke="#000" stroke-width="2"/>
+    <text x="125" y="236" text-anchor="middle" font-size="9" fill="#000">Database</text>
+  </g>
+
+  <!-- Bottom tagline -->
+  <text x="450" y="380" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#475569" font-weight="600">We built KasFlow to fix ALL of this.</text>
+</svg>
