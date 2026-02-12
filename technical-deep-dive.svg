@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 680">
   <defs>
     <style>
       .title { font-family: system-ui, sans-serif; font-weight: 800; font-size: 26px; }
@@ -13,7 +13,7 @@
   </defs>
 
   <!-- Background -->
-  <rect width="900" height="600" fill="#fff5f0"/>
+  <rect width="900" height="680" fill="#fff5f0"/>
 
   <!-- KasFlow Logo - Top Right -->
   <g transform="translate(830, 10)">
@@ -26,149 +26,149 @@
   <text x="450" y="45" text-anchor="middle" class="title" fill="#000">Technical Innovation</text>
 
   <!-- Section 1: Deterministic Key Derivation -->
-  <g transform="translate(30, 75)">
+  <g transform="translate(30, 70)">
     <!-- Section header -->
-    <rect width="840" height="145" rx="12" fill="#bef264" stroke="#000" stroke-width="4"/>
-    <text x="420" y="30" text-anchor="middle" class="section-title" fill="#000">1. Deterministic Key Derivation</text>
-    <line x1="20" y1="45" x2="820" y2="45" stroke="#000" stroke-width="2"/>
+    <rect width="840" height="130" rx="12" fill="#bef264" stroke="#000" stroke-width="4"/>
+    <text x="420" y="28" text-anchor="middle" class="section-title" fill="#000">1. Deterministic Key Derivation</text>
+    <line x1="20" y1="40" x2="820" y2="40" stroke="#000" stroke-width="2"/>
 
     <!-- Flow boxes -->
-    <g transform="translate(30, 60)">
+    <g transform="translate(30, 50)">
       <!-- Passkey -->
-      <rect width="130" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="65" y="25" text-anchor="middle" font-size="24">&#x1F91A;</text>
-      <text x="65" y="50" text-anchor="middle" class="highlight">Passkey</text>
-      <text x="65" y="65" text-anchor="middle" class="box-text">Face ID / Touch ID</text>
+      <rect width="130" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="65" y="22" text-anchor="middle" font-size="22">&#x1F91A;</text>
+      <text x="65" y="42" text-anchor="middle" class="highlight">Passkey</text>
+      <text x="65" y="56" text-anchor="middle" class="box-text">Face ID / Touch ID</text>
     </g>
 
-    <path d="M 190 95 L 230 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 190 82 L 230 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(260, 60)">
+    <g transform="translate(260, 50)">
       <!-- WebAuthn -->
-      <rect width="130" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="65" y="30" text-anchor="middle" class="highlight">WebAuthn</text>
-      <text x="65" y="50" text-anchor="middle" class="box-text">Public Key</text>
-      <text x="65" y="65" text-anchor="middle" class="code">(65 bytes)</text>
+      <rect width="130" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="65" y="25" text-anchor="middle" class="highlight">WebAuthn</text>
+      <text x="65" y="42" text-anchor="middle" class="box-text">Public Key</text>
+      <text x="65" y="56" text-anchor="middle" class="code">(65 bytes)</text>
     </g>
 
-    <path d="M 420 95 L 460 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 420 82 L 460 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(490, 60)">
+    <g transform="translate(490, 50)">
       <!-- SHA-256 -->
-      <rect width="130" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="65" y="30" text-anchor="middle" class="highlight">SHA-256</text>
-      <text x="65" y="50" text-anchor="middle" class="box-text">Hash</text>
-      <text x="65" y="65" text-anchor="middle" class="code">(32 bytes)</text>
+      <rect width="130" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="65" y="25" text-anchor="middle" class="highlight">SHA-256</text>
+      <text x="65" y="42" text-anchor="middle" class="box-text">Hash</text>
+      <text x="65" y="56" text-anchor="middle" class="code">(32 bytes)</text>
     </g>
 
-    <path d="M 650 95 L 690 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 650 82 L 690 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(720, 60)">
+    <g transform="translate(720, 50)">
       <!-- Wallet -->
-      <rect width="100" height="70" rx="8" fill="#22d3ee" stroke="#000" stroke-width="3"/>
-      <text x="50" y="30" text-anchor="middle" class="highlight">Wallet</text>
-      <text x="50" y="50" text-anchor="middle" class="code">kaspa:qr...</text>
+      <rect width="100" height="65" rx="8" fill="#22d3ee" stroke="#000" stroke-width="3"/>
+      <text x="50" y="25" text-anchor="middle" class="highlight">Wallet</text>
+      <text x="50" y="45" text-anchor="middle" class="code">kaspa:qr...</text>
     </g>
   </g>
 
-  <!-- Key insight for section 1 -->
-  <g transform="translate(550, 180)">
+  <!-- Key insight for section 1 - BELOW the section -->
+  <g transform="translate(30, 210)">
     <rect width="300" height="35" rx="6" fill="#fde68a" stroke="#000" stroke-width="2"/>
     <text x="150" y="22" text-anchor="middle" class="highlight">Same Passkey = Same Wallet Everywhere</text>
   </g>
 
   <!-- Section 2: Per-Transaction Authentication -->
-  <g transform="translate(30, 240)">
-    <rect width="840" height="145" rx="12" fill="#f472b6" stroke="#000" stroke-width="4"/>
-    <text x="420" y="30" text-anchor="middle" class="section-title" fill="#000">2. Per-Transaction Authentication</text>
-    <line x1="20" y1="45" x2="820" y2="45" stroke="#000" stroke-width="2"/>
+  <g transform="translate(30, 260)">
+    <rect width="840" height="130" rx="12" fill="#f472b6" stroke="#000" stroke-width="4"/>
+    <text x="420" y="28" text-anchor="middle" class="section-title" fill="#000">2. Per-Transaction Authentication</text>
+    <line x1="20" y1="40" x2="820" y2="40" stroke="#000" stroke-width="2"/>
 
     <!-- Flow -->
-    <g transform="translate(30, 60)">
-      <rect width="140" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="70" y="30" text-anchor="middle" class="highlight">User clicks</text>
-      <text x="70" y="50" text-anchor="middle" class="highlight">"Send 10 KAS"</text>
+    <g transform="translate(30, 50)">
+      <rect width="140" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="70" y="25" text-anchor="middle" class="highlight">User clicks</text>
+      <text x="70" y="45" text-anchor="middle" class="highlight">"Send 10 KAS"</text>
     </g>
 
-    <path d="M 200 95 L 240 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 200 82 L 240 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(270, 60)">
-      <rect width="140" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="70" y="25" text-anchor="middle" font-size="20">&#x1F91A;</text>
-      <text x="70" y="50" text-anchor="middle" class="highlight">Biometric</text>
-      <text x="70" y="65" text-anchor="middle" class="box-text">Required EACH time</text>
+    <g transform="translate(270, 50)">
+      <rect width="140" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="70" y="22" text-anchor="middle" font-size="18">&#x1F91A;</text>
+      <text x="70" y="42" text-anchor="middle" class="highlight">Biometric</text>
+      <text x="70" y="56" text-anchor="middle" class="box-text">Required EACH time</text>
     </g>
 
-    <path d="M 440 95 L 480 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 440 82 L 480 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(510, 60)">
-      <rect width="140" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="70" y="30" text-anchor="middle" class="highlight">TX Hash</text>
-      <text x="70" y="50" text-anchor="middle" class="box-text">= WebAuthn</text>
-      <text x="70" y="65" text-anchor="middle" class="box-text">Challenge</text>
+    <g transform="translate(510, 50)">
+      <rect width="140" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="70" y="25" text-anchor="middle" class="highlight">TX Hash</text>
+      <text x="70" y="42" text-anchor="middle" class="box-text">= WebAuthn</text>
+      <text x="70" y="56" text-anchor="middle" class="box-text">Challenge</text>
     </g>
 
-    <path d="M 680 95 L 720 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 680 82 L 720 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(750, 60)">
-      <rect width="80" height="70" rx="8" fill="#bef264" stroke="#000" stroke-width="3"/>
-      <text x="40" y="35" text-anchor="middle" font-size="24">&#x2713;</text>
-      <text x="40" y="60" text-anchor="middle" class="highlight">Signed</text>
+    <g transform="translate(750, 50)">
+      <rect width="80" height="65" rx="8" fill="#bef264" stroke="#000" stroke-width="3"/>
+      <text x="40" y="30" text-anchor="middle" font-size="22">&#x2713;</text>
+      <text x="40" y="52" text-anchor="middle" class="highlight">Signed</text>
     </g>
   </g>
 
-  <!-- Key insight for section 2 -->
-  <g transform="translate(30, 345)">
+  <!-- Key insight for section 2 - BELOW the section -->
+  <g transform="translate(30, 400)">
     <rect width="300" height="35" rx="6" fill="#fde68a" stroke="#000" stroke-width="2"/>
     <text x="150" y="22" text-anchor="middle" class="highlight">Like a Hardware Wallet - Every TX</text>
   </g>
 
   <!-- Section 3: Zero Backend -->
-  <g transform="translate(30, 405)">
-    <rect width="840" height="145" rx="12" fill="#a78bfa" stroke="#000" stroke-width="4"/>
-    <text x="420" y="30" text-anchor="middle" class="section-title" fill="#000">3. Zero Backend Architecture</text>
-    <line x1="20" y1="45" x2="820" y2="45" stroke="#000" stroke-width="2"/>
+  <g transform="translate(30, 450)">
+    <rect width="840" height="130" rx="12" fill="#a78bfa" stroke="#000" stroke-width="4"/>
+    <text x="420" y="28" text-anchor="middle" class="section-title" fill="#000">3. Zero Backend Architecture</text>
+    <line x1="20" y1="40" x2="820" y2="40" stroke="#000" stroke-width="2"/>
 
     <!-- Flow -->
-    <g transform="translate(30, 60)">
-      <rect width="180" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="90" y="30" text-anchor="middle" class="highlight">Payment Link</text>
-      <text x="90" y="50" text-anchor="middle" class="code">kasflow.app/pay/</text>
-      <text x="90" y="65" text-anchor="middle" class="code">eyJ0byI6Li4ufQ</text>
+    <g transform="translate(30, 50)">
+      <rect width="180" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="90" y="25" text-anchor="middle" class="highlight">Payment Link</text>
+      <text x="90" y="42" text-anchor="middle" class="code">kasflow.app/pay/</text>
+      <text x="90" y="56" text-anchor="middle" class="code">eyJ0byI6Li4ufQ</text>
     </g>
 
-    <path d="M 240 95 L 280 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 240 82 L 280 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(310, 60)">
-      <rect width="180" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="90" y="30" text-anchor="middle" class="highlight">URL Contains</text>
-      <text x="90" y="50" text-anchor="middle" class="box-text">Address + Amount</text>
-      <text x="90" y="65" text-anchor="middle" class="box-text">Network + Memo</text>
+    <g transform="translate(310, 50)">
+      <rect width="180" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="90" y="25" text-anchor="middle" class="highlight">URL Contains</text>
+      <text x="90" y="42" text-anchor="middle" class="box-text">Address + Amount</text>
+      <text x="90" y="56" text-anchor="middle" class="box-text">Network + Memo</text>
     </g>
 
-    <path d="M 520 95 L 560 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 520 82 L 560 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(590, 60)">
-      <rect width="140" height="70" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
-      <text x="70" y="30" text-anchor="middle" class="highlight">Client Polls</text>
-      <text x="70" y="50" text-anchor="middle" class="box-text">Kaspa RPC</text>
-      <text x="70" y="65" text-anchor="middle" class="box-text">Every 2 seconds</text>
+    <g transform="translate(590, 50)">
+      <rect width="140" height="65" rx="8" fill="#fff" stroke="#000" stroke-width="3"/>
+      <text x="70" y="25" text-anchor="middle" class="highlight">Client Polls</text>
+      <text x="70" y="42" text-anchor="middle" class="box-text">Kaspa RPC</text>
+      <text x="70" y="56" text-anchor="middle" class="box-text">Every 2 seconds</text>
     </g>
 
-    <path d="M 760 95 L 800 95" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+    <path d="M 760 82 L 800 82" stroke="#000" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
 
-    <g transform="translate(810, 75)">
-      <text x="10" y="10" text-anchor="middle" font-size="28">&#x2713;</text>
-      <text x="10" y="35" text-anchor="middle" class="box-text">Paid!</text>
+    <g transform="translate(810, 60)">
+      <text x="10" y="10" text-anchor="middle" font-size="26">&#x2713;</text>
+      <text x="10" y="32" text-anchor="middle" class="box-text">Paid!</text>
     </g>
   </g>
 
-  <!-- Key insight for section 3 -->
-  <g transform="translate(570, 510)">
+  <!-- Key insight for section 3 - BELOW the section -->
+  <g transform="translate(570, 590)">
     <rect width="300" height="35" rx="6" fill="#fde68a" stroke="#000" stroke-width="2"/>
     <text x="150" y="22" text-anchor="middle" class="highlight">No Database. No Server. Just URLs.</text>
   </g>
 
   <!-- Bottom tagline -->
-  <text x="450" y="580" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#000" font-weight="700">Three innovations that make KasFlow unique</text>
+  <text x="450" y="660" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#000" font-weight="700">Three innovations that make KasFlow unique</text>
 </svg>
